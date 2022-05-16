@@ -20,8 +20,6 @@ export const HeaderContainer = styled.header(
 const TextContainer = styled.span({ color: colors.violetPurple });
 
 const buttonStyles = {
-  //position: 'absolute',
-  //right: '50px',
   background: colors.sparkYellow,
   color: colors.violetPurple,
   paddingTop: 10,

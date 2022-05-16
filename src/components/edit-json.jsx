@@ -3,8 +3,6 @@ import React, { Component } from 'react';
 import JSONEditor from 'jsoneditor';
 import 'jsoneditor/dist/jsoneditor.css';
 
-//import "./JSONEditorDemo.css";
-
 export default class EditJSON extends Component {
   componentDidMount() {
     const options = {
@@ -43,12 +41,6 @@ export default class EditJSON extends Component {
       this.jsoneditor.destroy();
     }
   }
-
-  /*
-  componentDidUpdate() {
-    this.jsoneditor.update(this.props.json);
-  }
-  */
 
   render() {
     return (

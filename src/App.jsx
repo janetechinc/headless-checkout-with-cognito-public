@@ -44,6 +44,7 @@ const App = () => {
       false
     );
 
+    // This url can be changed to point to different environments.
     document.getElementById('jane-frame-script').src =
       'https://staging-api.nonprod-iheartjane.com/v1/headless/embed.js';
   }, []);
