@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Overriding Amplify Styling */
+[data-amplify-authenticator] {
+  --amplify-colors-border-primary: #381e47;
+  --amplify-colors-font-interactive: #381e47;
+  --amplify-components-heading-color: var(--amplify-colors-neutral-20);
+  --amplify-components-tabs-item-active-border-color: #ffc220;
+  --amplify-components-tabs-item-active-color: var(--amplify-colors-black);
+  --amplify-components-tabs-item-color: var(--amplify-colors-black);
+  --amplify-components-tabs-item-focus-color: var(--amplify-colors-black);
+  --amplify-components-text-color: var(--amplify-colors-font-interactive);
+}
+
+.amplify-button[data-variation='primary'] {
+  border: none;
+  background: linear-gradient(
+    to right,
+    #381e47,
+    #ffc220
+  );
+}

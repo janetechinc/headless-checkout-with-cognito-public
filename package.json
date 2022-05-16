@@ -1,0 +1,57 @@
+{
+  "name": "headless-checkout-with-cognito",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@aws-amplify/cli": "7.6.23",
+    "@aws-amplify/ui-components": "1.9.6",
+    "@aws-amplify/ui-react": "2.10.0",
+    "@emotion/react": "^11.5.0",
+    "@emotion/styled": "^11.3.0",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "aws-amplify": "^4.2.5",
+    "eslint-config-prettier": "^8.5.0",
+    "global": "^4.4.0",
+    "jsoneditor": "^9.7.4",
+    "lodash": "4.17.21",
+    "prettier": "2.5.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-modal": "^3.14.4",
+    "react-scripts": "4.0.3",
+    "web-vitals": "^1.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/lodash": "4.14.165",
+    "@typescript-eslint/eslint-plugin": "^5.14.0",
+    "@typescript-eslint/parser": "^5.14.0",
+    "babel-plugin-lodash": "3.3.4",
+    "eslint-plugin-react": "^7.29.3"
+  }
+}
