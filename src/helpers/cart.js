@@ -4,12 +4,13 @@ import { get, set, assign } from 'lodash';
 export const buildCart = (user, { storeId, products }) => {
   let payload = {
     products,
-    user: USER,
+    // user: USER,
     cognitoToken: undefined,
     storeId,
     headlessPartnerName: 'Your Company Name',
     options: OPTIONS,
   };
+  console.log('user', user);
 
   if (user) {
     const {
@@ -17,7 +18,7 @@ export const buildCart = (user, { storeId, products }) => {
       payload: { given_name, family_name, email },
     } = get(user, 'signInUserSession.idToken');
 
-    set(payload, 'cognitoToken', jwtToken);
+    set(payload, 'cognitoToken', user.signInUserSession.accessToken.jwtToken);
     assign(payload.user, {
       firstName: given_name,
       lastName: family_name,
