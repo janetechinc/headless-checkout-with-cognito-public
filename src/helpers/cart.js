@@ -16,7 +16,7 @@ export const buildCart = (user, { storeId, products }) => {
     const {
       jwtToken,
       payload: { given_name, family_name, email },
-    } = get(user, 'signInUserSession.idToken');
+    } = get(user, 'signInUserSession.accessToken');
 
     set(payload, 'cognitoToken', user.signInUserSession.accessToken.jwtToken);
     assign(payload.user, {
