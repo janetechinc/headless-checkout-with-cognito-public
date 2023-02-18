@@ -9,5 +9,10 @@ For more information on implementing AWS Cognito with Jane Roots, go [here](http
 2) Edit `src/config.js`, and add values for the variables USER_POOL_ID, APP_CLIENT_ID, and DOMAIN.
 4) `npm start`
 
+You may get an SSL error when you try to start this app. If so, you can run the following command to fix it:
+```
+export NODE_OPTIONS=--openssl-legacy-provider
+```
+
 ## Configuring the Jane Environment
 to use different Jane environments, customize the iframe url in [src/App.jsx](https://github.com/janetechinc/headless-checkout-with-cognito-public/blob/main/src/App.jsx#L48)
